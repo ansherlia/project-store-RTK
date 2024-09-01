@@ -1,0 +1,42 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.orders {
+	width: 900px;
+}
+.checkout {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	border: 2px dashed tomato;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.checkout p {
+	margin: 15px 0;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	color: blueviolet;
+}
+.checkout button {
+	background-color: tomato;
+	border: none;
+	padding: 7px 10px;
+	font-size: 1.4rem;
+	color: white;
+	margin-top: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+.checkout button:hover {
+	background-color: darkcyan;
+}
+.checkout {
+	width: 200px;
+}

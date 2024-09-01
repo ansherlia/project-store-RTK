@@ -1,0 +1,30 @@
+/** @format */
+
+.container {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	margin: auto;
+}
+.products {
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.error {
+	margin-left: 500px;
+	margin-top: 100px;
+	font-size: 5rem;
+	color: rgb(235, 8, 8);
+	animation: error 1s ease infinite;
+}
+@keyframes error {
+	0% {
+		color: rgb(14, 59, 184);
+	}
+	100% {
+		color: red;
+	}
+}
