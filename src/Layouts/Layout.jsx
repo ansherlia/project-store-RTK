@@ -12,7 +12,7 @@ function Layout({ children }) {
   return (
     <>
       <header>
-        <Link to="/products">TaskMna Shop</Link>
+        <Link to="/products">TaskMan Shop</Link>
         <Link to="/checkout">
           <LuShoppingCart />
           {!!state.itemCounter && <span>{state.itemCounter}</span>}
