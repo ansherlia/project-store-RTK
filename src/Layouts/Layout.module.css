@@ -1,4 +1,4 @@
-header {
+.header {
 	display: flex;
 
 	align-items: center;
@@ -9,7 +9,7 @@ header {
 	height: 70px;
 	border-radius: 12px;
 }
-header a:last-child {
+.header a:last-child {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	background-color: #fffbfb;
@@ -17,7 +17,7 @@ header a:last-child {
 	border-radius: 10px;
 	position: relative;
 }
-header a:last-child span {
+.header a:last-child span {
 	position: absolute;
 	top: -6px;
 	/* border: 1px solid; */
@@ -27,7 +27,7 @@ header a:last-child span {
 	padding: 2px 7px;
 	font-size: 20px;
 }
-header a:first-child {
+.header a:first-child {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	color: #fffbfb;
@@ -35,10 +35,10 @@ header a:first-child {
 	border-radius: 10px;
 	position: relative;
 }
-header p {
+.header p {
 	color: #000;
 }
-footer {
+.footer {
 	display: flex;
 	margin-top: 100px;
 	align-items: center;
@@ -51,7 +51,7 @@ footer {
 	border-radius: 12px;
 	color: rgb(216, 224, 224);
 }
-footer span {
+.footer span {
 	margin-left: 10px;
 	color: #c40e0e;
 	font-size: 3rem;
