@@ -30,7 +30,7 @@ function ProductsPage() {
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
-
+console.log(query)
   useEffect(() => {
     setDisplayed(product);
     setQuery(getInitialQuery(searchParams));
