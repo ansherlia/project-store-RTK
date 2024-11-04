@@ -11,7 +11,7 @@ function Layout({ children }) {
   // const [state] = useCart();
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <Link to="/products">TaskMan Shop</Link>
         <Link to="/checkout">
           <LuShoppingCart />
@@ -19,7 +19,7 @@ function Layout({ children }) {
         </Link>
       </header>
       {children}
-      <footer>
+      <footer className={styles.footer}>
         <p>Developed By Reza With</p>
         {/* <span>
 					<FaHeart />
