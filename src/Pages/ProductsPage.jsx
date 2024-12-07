@@ -30,7 +30,7 @@ function ProductsPage() {
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
-console.log(query)
+  console.log(query);
   useEffect(() => {
     setDisplayed(product);
     setQuery(getInitialQuery(searchParams));
@@ -45,9 +45,10 @@ console.log(query)
   }, [query]);
 
   return (
-    <>
+    <div className={styles.productPage}>
       <SearchBox search={search} setSearch={setSearch} setQuery={setQuery} />
       <div className={styles.container}>
+        <Sidebar query={query} setQuery={setQuery} />
         {!displayed.length && <Loader />}
 
         <div className={styles.products}>
@@ -55,9 +56,8 @@ console.log(query)
             <Card data={p} key={p.id} />
           ))}
         </div>
-        <Sidebar query={query} setQuery={setQuery} />
       </div>
-    </>
+    </div>
   );
 }
 

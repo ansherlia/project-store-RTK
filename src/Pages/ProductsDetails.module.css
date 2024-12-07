@@ -1,89 +1,179 @@
 .load {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	margin-right: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 20px 0 300px 0;
-	/* height: 1000px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 20px 0 300px 0; */
+  /* height: 1000px; */
+}
+.details {
+  width: 90%;
+  margin: 50px auto;
 }
 
 .details p {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .container img {
-	width: 320px;
-	height: 420px;
-	padding: 16px;
-	border-radius: 10px;
-	margin-top: 30px;
-	border: dashed 2px tomato;
+  width: 320px;
+  height: 420px;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: dashed 2px tomato;
 }
-.container > div {
-	border: 2px dashed rgb(190, 190, 190);
-	height: 500px;
-	margin-top: 25px;
-	padding: 25px;
-	border-radius: 14px;
-	width: 1000px;
-}
+
 .container h2 {
-	color: rgb(231, 83, 57);
-	padding: 10px 0;
-	font-size: 1.6rem;
-	font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(231, 83, 57);
+  margin-top: 50px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .container p {
-	text-align: justify;
-	width: 600px;
-	height: 100px;
-	color: #949191;
-	font-size: 1.1rem;
-	margin: 20px 0 100px;
+  text-align: justify;
+  width: 90%;
+  height: 100px;
+  color: #949191;
+  font-size: 1.1rem;
+  margin: 20px auto 120px;
 }
 .container h3 {
-	font-size: 1.4rem;
-	font-weight: 800;
-	margin-top: 30px;
-	margin-bottom: 40px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .foot {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
-	align-items: center;
-	/* padding: 10px 0; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  /* padding: 10px 0; */
 }
 
 .foot a {
-	margin-bottom: 100px;
-	/* margin-right: 20px; */
-	text-decoration: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 1.5rem;
-	background-color: tomato;
-	color: #fff;
-	padding: 7px;
-	border-radius: 6px;
-	transition: all 0.4s ease;
+  margin-bottom: 100px;
+  /* margin-right: 20px; */
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  background-color: tomato;
+  color: #fff;
+  padding: 7px;
+  border-radius: 6px;
+  width: 350px;
+  transition: all 0.4s ease;
 }
 .foot p {
-	display: flex;
-	align-items: center;
-	padding: 0 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
 }
 .foot p span {
-	margin: 0 4px;
+  margin: 0 4px;
 }
 .foot a:hover {
-	/* width: 00px; */
-	background-color: darkcyan;
-	transform: rotate(220deg)
+  /* width: 00px; */
+  background-color: darkcyan;
+  transform: rotate(220deg);
+}
+@media (min-width: 768px) {
+  .load {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 300px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 300px 0;
+    /* height: 1000px; */
+  }
+
+  .details p {
+    font-family: sans-serif;
+  }
+
+  .container img {
+    width: 320px;
+    height: 420px;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: dashed 2px tomato;
+  }
+  .container > div {
+    border: 2px dashed rgb(190, 190, 190);
+    height: 500px;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 14px;
+    width: 1000px;
+  }
+  .container h2 {
+    color: rgb(231, 83, 57);
+    padding: 10px 0;
+    font-size: 1.6rem;
+    font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .container p {
+    text-align: justify;
+    width: 600px;
+    height: 100px;
+    color: #949191;
+    font-size: 1.1rem;
+    margin: 20px 0 100px;
+  }
+  .container h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    /* padding: 10px 0; */
+  }
+
+  .foot a {
+    margin-bottom: 100px;
+    /* margin-right: 20px; */
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: tomato;
+    color: #fff;
+    padding: 7px;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+  }
+  .foot p {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+  }
+  .foot p span {
+    margin: 0 4px;
+  }
+  .foot a:hover {
+    /* width: 00px; */
+    background-color: darkcyan;
+    transform: rotate(220deg);
+  }
 }

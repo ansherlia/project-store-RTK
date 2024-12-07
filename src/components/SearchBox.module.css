@@ -6,7 +6,7 @@
 }
 .search input {
 	padding: 5px 10px;
-	width: 350px;
+	width: 280px;
 	border: dashed 2px rgb(207, 206, 206);
 	color: tomato;
 	font-size: 1.5rem;
@@ -30,4 +30,14 @@
 	background-color: blueviolet;
 	color: #fff;
 	border: dashed 2px rgb(245, 243, 243);
+}
+@media (min-width:768px) {
+	.search input {
+		padding: 5px 10px;
+		width: 350px;
+		border: dashed 2px rgb(207, 206, 206);
+		color: tomato;
+		font-size: 1.5rem;
+		border-radius: 10px;
+	}
 }

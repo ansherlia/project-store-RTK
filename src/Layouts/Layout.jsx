@@ -10,7 +10,7 @@ function Layout({ children }) {
   const state = useSelector((store) => store.cart);
   // const [state] = useCart();
   return (
-    <>
+    <div className={styles.container}>
       <header className={styles.header}>
         <Link to="/products">TaskMan Shop</Link>
         <Link to="/checkout">
@@ -26,7 +26,7 @@ function Layout({ children }) {
 				</span> */}
         <span>&#9829;</span>
       </footer>
-    </>
+    </div>
   );
 }
 
